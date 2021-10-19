@@ -13,9 +13,11 @@ const types = {
 			exponent: 'u32'
 		},
 		PricePayloadSubPrice: '(Bytes, u64, FractionLength, JsonNumberValue)',
+		PricePayloadSubJumpBlock: "(Bytes, RequestInterval)",
 		PricePayload: {
 			block_number: 'BlockNumber',
 			price: 'Vec<PricePayloadSubPrice>',
+			jump_block: 'Vec<PricePayloadSubJumpBlock>',
 			public: 'AccountId'
 		}
 	}
